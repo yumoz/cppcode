@@ -4,8 +4,17 @@ using namespace std;
 class time
 {
 	public:
-		time(){year=0;month=0;day=0;hour=0;minute=0;sec=0;}//默认构造函数 
-		time(int y,int mo,int d,int h ,int m,int s):year(y),month(mo),day(d),hour(h),minute(m),sec(s){}//构造函数重载 
+		//默认构造函数 
+		time(){year=0;month=0;day=0;hour=0;minute=0;sec=0;}
+		//构造函数重载 
+		time(int y,int mo,int d,int h ,int m,int s)
+			:year(y)
+			,month(mo)
+			,day(d)
+			,hour(h)
+			,minute(m)
+			,sec(s)
+		{}
 		time operator++();//声明运算符重载成员函数 
 		void display()
 			{
